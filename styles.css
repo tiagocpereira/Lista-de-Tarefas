@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "poppins", sans-serif;
 }
 
 body {
@@ -16,6 +17,7 @@ body {
     border: 2px solid #fff;
     padding: 30px 40px;
     width: 40%;
+    min-height: 500px;
 }
 
 .new-task-container {
@@ -24,6 +26,34 @@ body {
     border-radius: 5px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
     display: flex;
+}
+
+.new-task-container input {
+    flex: 3;
+    font-size: 1rem;
+    border: 2px solid #d1d3d4;
+    border-radius: 5px;
+    padding: 12px;
+    font-weight: 500;
+}
+
+.new-task-container input:focus {
+    outline: none;
+    border-color: #41b883;
+}
+
+.new-task-button {
+    flex: 1;
+    border-radius: 5px;
+    font-weight: 500;
+    height: 100%;
+    font-size: 1rem;
+    border: none;
+    background-color: #41b883;
+    color: #fff;
+    padding: 12px;
+    margin-left: 12px;
+    cursor: pointer;
 }
 
 
