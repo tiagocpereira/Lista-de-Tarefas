@@ -9,6 +9,17 @@ const handleAddTask = () => {
     if (!inputIsValid) {
         return inputElement.classList.add("error");
     }
+};
+
+const handleInputChange = () => {
+    const inputIsValid = validateInput();
+
+    if (inputIsValid) {
+        return inputElement.classList.remove("error");
+    }
 }
 
+
 addTasKButton.addEventListener("click" , () => handleAddTask());
+
+inputElement.addEventListener("change",  () => handleInputChange ());

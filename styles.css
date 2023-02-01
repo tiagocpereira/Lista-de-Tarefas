@@ -65,3 +65,11 @@ body {
     width: 100%;
 }
 
+.error {
+    border: 2px solid red !important;
+}
+
+.error::placeholder {
+    color: red;
+}
+
