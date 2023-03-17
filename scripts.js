@@ -9,6 +9,16 @@ const handleAddTask = () => {
     if (!inputIsValid) {
         return inputElement.classList.add("error");
     }
+
+    const taskItemContainer = document.createElement('div')
+    taskItemContainer.classList.add('task-item')
+
+    const taskContent = document.createElement('p')
+    taskContent.innerText = inputElement.value;
+
+    const deleteItem = document.createElement('i')
+    deleteItem.classList.add('fa-regular')
+    deleteItem.classList.add('fa-trash-can')
 };
 
 const handleInputChange = () => {
